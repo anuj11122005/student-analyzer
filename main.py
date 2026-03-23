@@ -40,3 +40,13 @@ plt.title('Subject Average Marks')
 plt.xlabel('Subjects')
 plt.ylabel('Average Marks')
 plt.show()
+
+
+# Top Students (Based on Average Marks)
+top_students = df.sort_values(by='Average', ascending=False).head(5)
+
+plt.bar(top_students['Name'], top_students["Average"])
+plt.title('Top 5 Students by Average Marks')
+plt.xlabel('Students')
+plt.ylabel('Average Marks')
+plt.show()
