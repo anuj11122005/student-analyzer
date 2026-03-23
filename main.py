@@ -50,3 +50,10 @@ plt.title('Top 5 Students by Average Marks')
 plt.xlabel('Students')
 plt.ylabel('Average Marks')
 plt.show()
+
+
+df["Grade"].value_counts().plot(kind="bar")
+plt.title('Grade Distribution')
+plt.xlabel('Grades')
+plt.ylabel('Number of Students')
+plt.show()
